@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            background: linear-gradient(to right, rgb(40, 107, 184), rgb(205, 30, 205));
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            background-color: white;
+            padding: 40px 30px;
+            width: 350px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 50px;
+            color: #999;
+            box-shadow: 0 0 20 rgba(0,0,0,0.5,);
+        }
+        .container h1{
+            margin: 25px;
+            color: black;
+        }
+        .forgot{
+            text-align: right;
+            margin-bottom: 20px;
+
+        }
+        label{
+            display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+            padding: 10px;
+            font-weight: 500;
+            color: #555;
+        }
+        input[type="text"],input[type="password"] {
+            
+            width:100%;
+            margin-bottom: 10px;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 14px;
+
+        }
+        .login-btn{
+            background: linear-gradient(to right, rgb(58, 180, 58), rgb(1, 194, 1));
+            width: 100%;
+            border: none;
+            color: white;
+            padding: 15px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .login-btn:hover{
+           background: linear-gradient(to right, #34e89e, #0f3443);  
+        }
+        .forgot a{
+            text-decoration: none;
+            font-size: 13px;
+            color: #999;
+
+        }
+        .or{
+            margin: 20px 0 10px;
+            font-size: 14px;
+        }
+        .icons{
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+
+        }
+        .icons a img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+        .icons a img:hover{
+            transform: scale(1.5);
+        }
+        .signup-text{
+            font-size: 14px;
+            margin-top:25px;
+        }
+        .signup-text a {
+            color: rgb(47, 47, 215);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+    </style>
+    
+        
+</head>
+<body>
+    <div class="container">
+        <h1>Login </h1>
+        <div class="Login">
+        <form action="">
+            <label for="usernamae">Username</label>
+            <input type="text" placeholder="Type your usernamae" required>
+            <label for="Password">Password</label>
+            <input type="password" placeholder="Type your Password" required>
+            <br>
+            <div class="forgot">
+                <a href="#">Forgot password?</a>
+            </div>
+            <input type="button" value="Login" class="login-btn">
+            
+           
+
+           <div class="or">
+            Or Signup using 
+           </div>
+
+                <div class="icons">
+                    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
+                    <a href="#"><img src="images/google.jpg" alt="Google"></a>
+
+                </div>
+
+        </form>
+        <div class="signup-text">
+            Or Sign Up using
+            <a href="#">Sign Up</a>
+        </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
